@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "actualizadoEl": "01/08/2025",
+  "fuente": "ARCA/AFIP - Vigencia hasta 31/01/2026",
+  "tarifas": [
+    {
+      "letra": "A",
+      "limiteAnual": 8992597.87,
+      "cuotaServicios": 37085.74,
+      "cuotaVentaMuebles": 37085.74
+    },
+    {
+      "letra": "B",
+      "limiteAnual": 13175201.52,
+      "cuotaServicios": 42216.41,
+      "cuotaVentaMuebles": 42216.41
+    },
+    {
+      "letra": "C",
+      "limiteAnual": 18473166.15,
+      "cuotaServicios": 49435.58,
+      "cuotaVentaMuebles": 48320.22
+    },
+    {
+      "letra": "D",
+      "limiteAnual": 22934610.05,
+      "cuotaServicios": 63357.80,
+      "cuotaVentaMuebles": 61824.18
+    },
+    {
+      "letra": "E",
+      "limiteAnual": 26977793.60,
+      "cuotaServicios": 89714.31,
+      "cuotaVentaMuebles": 81070.26
+    },
+    {
+      "letra": "F",
+      "limiteAnual": 33809379.57,
+      "cuotaServicios": 112906.59,
+      "cuotaVentaMuebles": 97291.54
+    },
+    {
+      "letra": "G",
+      "limiteAnual": 40431835.35,
+      "cuotaServicios": 172457.38,
+      "cuotaVentaMuebles": 118920.05
+    },
+    {
+      "letra": "H",
+      "limiteAnual": 61344853.64,
+      "cuotaServicios": 391400.62,
+      "cuotaVentaMuebles": 238038.48
+    },
+    {
+      "letra": "I",
+      "limiteAnual": 68664410.05,
+      "cuotaServicios": 721650.46,
+      "cuotaVentaMuebles": 355672.64
+    },
+    {
+      "letra": "J",
+      "limiteAnual": 78632948.76,
+      "cuotaServicios": 874069.29,
+      "cuotaVentaMuebles": 434895.92
+    },
+    {
+      "letra": "K",
+      "limiteAnual": 94805682.90,
+      "cuotaServicios": 1208890.60,
+      "cuotaVentaMuebles": 525732.01
+    }
+  ],
+  "donaciones": {
+    "mensaje": "Esta app es 100% gratuita y la mantengo en mi tiempo libre. Si te resulta útil, podés colaborar para seguir mejorándola 💛",
+    "aliasMercadoPago": "limite.monotributo.mp",
+    "cbu": "0000003100000000000000",
+    "cafecitoUrl": "https://cafecito.app/limitemonotributo"
+  }
+}
+

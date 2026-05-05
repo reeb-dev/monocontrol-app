@@ -1,0 +1,294 @@
+┌────────────────────────────────────────────────────────────────┐
+│                                                                │
+│  🔵 GOOGLE SIGN-IN - CONFIGURACIÓN RÁPIDA                     │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+
+✅ CÓDIGO: 100% IMPLEMENTADO
+⚠️  CONFIGURACIÓN: PENDIENTE (10 minutos)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 1: OBTENER SHA-1 (2 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+En la terminal, ejecuta:
+
+cd /Users/manuelreeb/AndroidStudioProjects/LmiteMonotributo
+
+keytool -list -v \
+  -keystore ~/.android/debug.keystore \
+  -alias androiddebugkey \
+  -storepass android \
+  -keypass android | grep SHA1
+
+Obtendrás algo como:
+SHA1: AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12
+
+📋 COPIA ese valor (todo después de "SHA1: ")
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 2: AGREGAR SHA-1 A FIREBASE (3 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Abre:
+   https://console.firebase.google.com/project/profile-68864/settings/general
+
+2. Scroll hasta "Tus apps"
+
+3. Encuentra: com.example.lmitemonotributo
+
+4. Click "Agregar huella digital"
+
+5. Pega el SHA-1 que copiaste
+
+6. Click "Guardar"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 3: HABILITAR GOOGLE SIGN-IN (2 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Abre:
+   https://console.firebase.google.com/project/profile-68864/authentication
+
+2. Pestaña "Sign-in method"
+
+3. Busca "Google" en la lista
+
+4. Click para habilitarlo
+
+5. Ingresa tu email de soporte (cualquier email tuyo)
+
+6. Click "Guardar"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 4: OBTENER WEB CLIENT ID (3 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Abre:
+   https://console.firebase.google.com/project/profile-68864/settings/general
+
+2. Scroll hasta "Tus apps"
+
+3. Si NO hay una "Web app", créala:
+   - Click "Agregar app"
+   - Selecciona el icono Web "</>
+   - Nombre: "MonoControl Web"
+   - Click "Registrar app"
+
+4. Una vez creada, verás:
+   "Web client ID: xxxxxx-xxxxxxxxxxxxxxxx.apps.googleusercontent.com"
+
+5. COPIA ese valor completo
+
+6. Abre en Android Studio:
+   app/src/main/res/values/strings.xml
+
+7. Reemplaza esta línea:
+   <string name="default_web_client_id" translatable="false">920436817763-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com</string>
+
+   Por:
+   <string name="default_web_client_id" translatable="false">TU_WEB_CLIENT_ID_AQUÍ</string>
+
+8. Guarda el archivo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PASO 5: PROBAR (2 min)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ejecuta:
+   ./gradlew :app:installDebug
+
+2. Abre la app
+
+3. En Login, verás: "Continuar con Google"
+
+4. Click en el botón
+
+5. Selecciona tu cuenta de Google
+
+6. ¡Deberías estar dentro! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LO QUE SE IMPLEMENTÓ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Dependencia play-services-auth agregada
+✅ AuthRepository.signInWithGoogle() implementado
+✅ AuthViewModel.loginWithGoogle() implementado
+✅ LoginScreen con botón "Continuar con Google"
+✅ RegisterScreen con botón "Registrarse con Google"
+✅ Launcher de Intent configurado
+✅ Manejo de errores
+✅ Integración con Firebase Auth
+✅ Guardado de perfil automático
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CARACTERÍSTICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔵 Login con 1 click
+📧 Email automático
+👤 Nombre automático
+🔒 Sin contraseñas
+✅ Seguro (OAuth 2.0)
+🌐 Multi-dispositivo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PANTALLAS ACTUALIZADAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 LoginScreen:
+   ┌────────────────────────┐
+   │  Email: ___________    │
+   │  Pass:  ___________    │
+   │  [    Ingresar    ]    │
+   │  ¿Olvidaste contraseña?│
+   │  ─────────────────────  │
+   │   o continuar con      │
+   │  ─────────────────────  │
+   │  [ Continuar con 🔵 ]  │ ← NUEVO
+   │  ─────────────────────  │
+   │  ¿No tenés cuenta?     │
+   └────────────────────────┘
+
+📱 RegisterScreen:
+   ┌────────────────────────┐
+   │  Selecciona tu rol:    │
+   │  ( ) Personal          │
+   │  ( ) Contador          │
+   │                        │
+   │  Email: ___________    │
+   │  Pass:  ___________    │
+   │  Pass2: ___________    │
+   │  [  Crear cuenta  ]    │
+   │  ─────────────────────  │
+   │          o             │
+   │  ─────────────────────  │
+   │  [ Registrarse con 🔵 ]│ ← NUEVO
+   │  ─────────────────────  │
+   │  ¿Ya tenés cuenta?     │
+   └────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  FLUJO DE AUTENTICACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Usuario click "Continuar con Google"
+    ↓
+Se abre selector de cuentas de Google
+    ↓
+Usuario selecciona su cuenta Google
+    ↓
+Google devuelve ID Token
+    ↓
+Firebase Auth valida el token
+    ↓
+Se crea/actualiza el usuario en Firebase
+    ↓
+Se guarda perfil (email, nombre, rol)
+    ↓
+Navegación a Home ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SOLUCIÓN RÁPIDA DE PROBLEMAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "Developer console not set up"
+   → Agrega SHA-1 (paso 2 arriba)
+
+❌ "Sign in failed"
+   → Habilita Google en Authentication (paso 3)
+
+❌ "API key not valid"
+   → Verifica google-services.json
+   → Descarga nuevamente desde Firebase Console
+
+❌ No aparece selector de cuentas
+   → Usa emulador con Google Play
+   → O prueba en dispositivo físico
+
+❌ Error 12501
+   → Verifica SHA-1
+   → Verifica package name
+   → Espera 5 minutos después de cambios en Console
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  DOCUMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📄 GOOGLE_SIGNIN_IMPLEMENTACION.md  → Guía completa
+📄 FIREBASE_QUICKSTART.md           → Inicio rápido Firebase
+📄 FIREBASE_RESUMEN_EJECUTIVO.md    → Documentación Firebase
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ENLACES ÚTILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔗 Firebase Console:
+   https://console.firebase.google.com/project/profile-68864
+
+🔗 Settings (para SHA-1):
+   https://console.firebase.google.com/project/profile-68864/settings/general
+
+🔗 Authentication (para habilitar Google):
+   https://console.firebase.google.com/project/profile-68864/authentication
+
+🔗 Users (para verificar):
+   https://console.firebase.google.com/project/profile-68864/authentication/users
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CÓDIGO:
+[✅] Dependencia agregada
+[✅] AuthRepository actualizado
+[✅] AuthViewModel actualizado
+[✅] LoginScreen actualizado
+[✅] RegisterScreen actualizado
+[✅] strings.xml configurado
+
+FIREBASE CONSOLE:
+[  ] SHA-1 agregado
+[  ] Google Sign-In habilitado
+[  ] Web client ID obtenido y actualizado
+
+TESTING:
+[  ] App probada en dispositivo
+[  ] Login con Google funciona
+[  ] Registro con Google funciona
+[  ] Usuario aparece en Firebase Console
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PROGRESO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Implementación:  ████████████████████ 100%
+Configuración:   ░░░░░░░░░░░░░░░░░░░░   0%
+
+TOTAL:           ████████░░░░░░░░░░░░  40%
+
+Para llegar al 100%: Completar pasos 1-4 arriba (10 min)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  RESUMEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ Google Sign-In está completamente implementado en el código
+
+⚠️  Solo faltan 4 configuraciones en Firebase Console (10 min):
+    1. Obtener SHA-1
+    2. Agregar SHA-1 a Firebase
+    3. Habilitar Google Sign-In
+    4. Obtener y actualizar Web client ID
+
+🎉 Después de eso: 100% funcional
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Fecha: 20 de Abril, 2026
+Versión: 1.0
+Estado: CÓDIGO COMPLETO ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+

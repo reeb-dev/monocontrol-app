@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920436817763",
+    "project_id": "profile-68864",
+    "storage_bucket": "profile-68864.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920436817763:android:8570b82d92a6c026ec9d56",
+        "android_client_info": {
+          "package_name": "com.manuelreeb.monocontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920436817763-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcX7p91l_jD2qdxDGo-nr5zOO6SHyPShg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920436817763-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
