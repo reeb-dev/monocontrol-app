@@ -1,0 +1,125 @@
+🇦🇷 MonoControl - Monotributo Argentino
+
+Tu monotributo bajo control • Facturación • Categorías • Alertas
+
+========================================
+
+¿Eres monotributista o contador en Argentina? MonoControl es la app que necesitabas para gestionar tu monotributo sin complicaciones.
+
+Controla tu facturación en tiempo real, sé alertado antes de cambiar de categoría y accede a toda la información fiscal de tus clientes desde tu teléfono.
+
+========================================
+
+✨ CARACTERÍSTICAS PRINCIPALES
+
+🔐 Autenticación Segura
+• Login con email/contraseña o Google
+• Registro rápido y seguro
+• Sesión persistente
+• Roles diferenciados: Personal o Contador
+
+📊 Dashboard Inteligente
+• Total facturado del mes actual
+• Tu categoría actual destacada
+• Barra de progreso visual
+• Comparativa Ingresos vs Gastos
+
+💰 Gestión de Movimientos
+• Registro ultra rápido (2 clics)
+• Historial ordenado por fecha
+• Códigos de color
+• Resumen diario actualizado
+
+📈 Información de Categorías
+• Tu categoría actual con datos fiscales
+• Cuota mensual según rubro
+• Próxima recategorización
+• Tabla completa de categorías A→K
+• Alertas automáticas al 70% del límite
+
+🔮 Simulación Fiscal
+• "¿Qué pasa si facturo X más?"
+• Visualiza si te recategorizas
+• Calcula impacto en cuota mensual
+
+🔔 Sistema de Alertas
+• Notificaciones sobre vencimientos
+• Barra de progreso en cada alerta
+• Semáforo visual de urgencia
+
+👥 Para Contadores
+• Administra múltiples clientes
+• Notas internas por cliente
+• Recordatorios por email y WhatsApp
+• Generación de reportes
+• Exportación a Excel
+
+👤 Perfil Personalizado
+• Datos de usuario
+• Selector de rol
+• Información fiscal centralizada
+
+========================================
+
+PARA MONOTRIBUTISTAS
+
+✅ Controlar facturación vs límite anual
+✅ Saber si te recategorizas antes de que pase
+✅ Recibir alertas automáticas
+✅ Exportar reporte para tu contador
+✅ Tomar decisiones informadas
+
+PARA CONTADORES
+
+✅ Gestionar múltiples clientes en una app
+✅ Ver semáforo de riesgo por cliente
+✅ Enviar recordatorios automáticos
+✅ Notas internas por cliente
+✅ Generar reportes profesionales
+✅ Ahorrar tiempo
+
+========================================
+
+🔒 SEGURIDAD Y PRIVACIDAD
+
+✅ Autenticación con Firebase
+✅ Datos encriptados
+✅ No vendemos datos
+✅ Cumplimiento con GDPR y leyes argentinas
+🔗 Política de privacidad: reeb-dev.github.io/monocontrol-privacy/
+
+========================================
+
+¿POR QUÉ MONOCONTROL?
+
+Simplicidad: Interfaz intuitiva, sin complicaciones
+Precisión: Cálculos fiscales exactos según AFIP
+Velocidad: Registro de movimientos en segundos
+Confianza: Datos encriptados y seguros
+Productividad: Ahorra horas en gestión fiscal
+Gratis: Sin costos ocultos
+
+========================================
+
+REQUISITOS
+
+• Android 5.0 o superior
+• Conexión a internet
+• ~50MB de espacio
+
+========================================
+
+SOPORTE
+
+¿Problemas o sugerencias?
+📧 manuelreeb@gmail.com
+
+========================================
+
+Diseñado para CABA y Argentina 🇦🇷
+Régimen: Monotributo 2026
+Versión: 1.0
+
+Hecho con ❤️ para emprendedores argentinos
+
+¡Descargá MonoControl y toma el control de tu monotributo! 🚀
