@@ -11,7 +11,7 @@ MonoControl ("nosotros", "nuestro" o "la aplicación") es una aplicación móvil
 ### Información de Autenticación
 - Dirección de email
 - Nombre completo (opcional)
-- Método de autenticación (email/contraseña o Google Sign-In)
+- Método de autenticación (email/contraseña o Google Sign-In), mediante **Firebase Authentication** (Google)
 
 ### Información Fiscal
 - CUIT (Código Único de Identificación Tributaria)
@@ -22,13 +22,17 @@ MonoControl ("nosotros", "nuestro" o "la aplicación") es una aplicación móvil
 - Nombres y CUIT de clientes
 - Direcciones de email de clientes
 - Información fiscal de clientes
-- Configuraciones de recordatorios
+- Configuraciones de recordatorios  
+  Estos datos pueden sincronizarse con **Cloud Firestore** (Google) cuando hay conexión y según la configuración del servicio.
 
 ### Información Técnica
 - Versión de la aplicación
 - Sistema operativo del dispositivo
 - Idioma del dispositivo
 - Configuraciones de notificaciones
+
+### Configuración remota
+- La app puede descargar parámetros o textos de ayuda (por ejemplo tarifas o mensajes) desde internet para mantener la información actualizada.
 
 ## Cómo Usamos su Información
 
@@ -45,11 +49,11 @@ MonoControl ("nosotros", "nuestro" o "la aplicación") es una aplicación móvil
 
 ## Compartir de Información
 
-**NO vendemos, alquilamos ni compartimos su información personal con terceros**, excepto en los siguientes casos:
+**No vendemos su información personal.** Los datos pueden tratarse por:
 
-- **Proveedores de Servicios**: Firebase (Google) para autenticación y almacenamiento seguro
-- **Requisitos Legales**: Si es requerido por ley o autoridad competente
-- **Su Consentimiento**: Cuando usted autoriza explícitamente compartir información
+- **Google Firebase / Google Cloud**: autenticación (Firebase Authentication), base de datos en la nube cuando corresponda (p. ej. Firestore para sincronización de clientes), según la implementación vigente de la app y la política de privacidad de Google.
+- **Requisitos Legales**: Si es requerido por ley o autoridad competente.
+- **Su Consentimiento**: Cuando usted autoriza explícitamente compartir información (por ejemplo al enviar un correo o WhatsApp desde la app con los datos que usted elija).
 
 ## Seguridad de Datos
 
@@ -97,6 +101,10 @@ Esta aplicación cumple con:
 - **RGPD** (para usuarios europeos)
 - **Políticas de Google Play**
 - **Términos de Servicio de Firebase**
+
+## Publicación (Google Play)
+
+Para cumplir con el requisito de URL de política de privacidad en Play Console, esta política puede publicarse en una página accesible públicamente; en el repositorio del proyecto, la versión HTML para **GitHub Pages** está en `docs/index.html` (ver `docs/POLITICA_PLAY_CONSOLE.md`).
 
 ---
 

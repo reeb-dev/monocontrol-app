@@ -29,6 +29,10 @@ El AAB suele quedar en `app/build/outputs/bundle/release/app-release.aab`.
 2. Subí el `.aab`, completá notas de la versión y publicá/revisá.
 3. Si cambiaste el **applicationId**, Play Console lo trata como **otra aplicación**: hay que crear una ficha nueva o volver al ID anterior si ya tenías usuarios en el ID viejo.
 
+## Política de privacidad (URL obligatoria)
+
+Configurá en Play Console la URL pública de la política. Guía: **[POLITICA_PLAY_CONSOLE.md](POLITICA_PLAY_CONSOLE.md)** (GitHub Pages con `docs/index.html`).
+
 ## Screenshots y texto de tienda
 
 Usá `DESCRIPCION_PLAYSTORE.md` en la raíz como base para la descripción corta/larga. Las capturas: teléfono obligatorio; tablet opcional según políticas vigentes.

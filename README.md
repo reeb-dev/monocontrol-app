@@ -36,7 +36,8 @@ Release / AAB:
 | [docs/PUBLICACION.md](docs/PUBLICACION.md) | Versión, firma, Play Console, AAB |
 | [DESCRIPCION_PLAYSTORE.md](DESCRIPCION_PLAYSTORE.md) | Texto para la ficha de Play Store |
 | [CHANGELOG.md](CHANGELOG.md) | Historial de versiones |
-| [PRIVACY_POLICY.md](PRIVACY_POLICY.md) | Política de privacidad (enlace en tienda / soporte) |
+| [PRIVACY_POLICY.md](PRIVACY_POLICY.md) | Política de privacidad (texto fuente) |
+| [docs/index.html](docs/index.html) | Versión web para publicar (GitHub Pages → URL para Play Console; ver [docs/POLITICA_PLAY_CONSOLE.md](docs/POLITICA_PLAY_CONSOLE.md)) |
 
 ## Arquitectura (resumen)
 
