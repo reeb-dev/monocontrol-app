@@ -1263,7 +1263,7 @@ private fun InformacionLegalCard() {
                         color = CelesteOscuro, fontWeight = FontWeight.SemiBold,
                         modifier = Modifier.clickable { })
                     HorizontalDivider(color = GrisClaro)
-                    Text("App: MonoControl v1.0.2",
+                    Text("App: MonoControl v1.0.3",
                         style = MaterialTheme.typography.labelSmall,
                         color = GrisMedio, textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth())
