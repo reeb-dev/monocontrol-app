@@ -49,6 +49,8 @@ import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 
+private const val CONTACTO_SOPORTE_EMAIL = "jesusreeb@hotmail.com"
+
 @Composable
 fun PerfilScreen(
     viewModel: PerfilViewModel,
@@ -59,7 +61,6 @@ fun PerfilScreen(
     onIrCalendario: () -> Unit = {},
     onAbrirDonaciones: () -> Unit = {},
     onCerrarSesion: () -> Unit = {},
-    onContactoClick: () -> Unit = {},
     onEliminarCuenta: () -> Unit = {}
 ) {
     val perfilGuardado by viewModel.perfil.collectAsStateWithLifecycle()
@@ -224,7 +225,7 @@ fun PerfilScreen(
         )
 
         // ── SOPORTE Y CONTACTO ───────────────────────────────────────────
-        SoporteCard(onContactoClick = onContactoClick)
+        SoporteCard()
 
         // ── CRÉDITOS Y DONACIONES ────────────────────────────────────────
         CreditosCard(onDonacionesClick = onAbrirDonaciones)
@@ -1521,7 +1522,8 @@ private fun RespaldoCard(expandido: Boolean, onExpandClick: () -> Unit) {
 
 // ── SOPORTE Y CONTACTO ───────────────────────────────────────────────────────
 @Composable
-private fun SoporteCard(onContactoClick: () -> Unit) {
+private fun SoporteCard() {
+    val context = LocalContext.current
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp),
@@ -1539,7 +1541,13 @@ private fun SoporteCard(onContactoClick: () -> Unit) {
                 Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                ContactoBtn("📧 Email", "soporte@app.com", CelesteOscuro, Modifier.weight(1f))
+                ContactoBtn(
+                    "📧 Email",
+                    CONTACTO_SOPORTE_EMAIL,
+                    CelesteOscuro,
+                    Modifier.weight(1f),
+                    onClick = { openUrl(context, "mailto:$CONTACTO_SOPORTE_EMAIL") }
+                )
                 ContactoBtn("💬 Chat", "Discord", CelesteOscuro, Modifier.weight(1f))
                 ContactoBtn("❓ FAQ", "Ver preguntas", CelesteOscuro, Modifier.weight(1f))
             }
@@ -1548,9 +1556,15 @@ private fun SoporteCard(onContactoClick: () -> Unit) {
 }
 
 @Composable
-private fun ContactoBtn(label: String, valor: String, color: Color, modifier: Modifier) {
+private fun ContactoBtn(
+    label: String,
+    valor: String,
+    color: Color,
+    modifier: Modifier,
+    onClick: () -> Unit = {}
+) {
     OutlinedButton(
-        onClick = { },
+        onClick = onClick,
         modifier = modifier.height(50.dp),
         shape = RoundedCornerShape(12.dp),
         border = BorderStroke(1.dp, color.copy(alpha = 0.3f))

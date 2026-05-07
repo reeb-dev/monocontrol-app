@@ -91,7 +91,7 @@ Podemos actualizar esta política ocasionalmente. Le notificaremos sobre cambios
 ## Contacto
 
 Para preguntas sobre esta política o sus datos:
-- **Email**: manuelreeb@gmail.com
+- **Email**: jesusreeb@hotmail.com
 - **Desarrollador**: Manuel Reeb
 
 ## Cumplimiento Legal

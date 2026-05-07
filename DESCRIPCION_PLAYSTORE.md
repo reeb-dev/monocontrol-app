@@ -161,7 +161,7 @@ Controla tu facturación en tiempo real, sé alertado antes de cambiar de catego
 ## 🆘 Soporte
 
 ¿Problemas o sugerencias?  
-📧 jesusseep@gmail.com
+📧 jesusreeb@hotmail.com
 
 ---
 
