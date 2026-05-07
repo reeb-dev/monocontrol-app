@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firmas y artefactos de release (no subir a Git)
+*.jks
+*.keystore
+app/release/

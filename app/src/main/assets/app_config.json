@@ -1,80 +1,79 @@
 {
-  "version": 1,
-  "actualizadoEl": "01/08/2025",
-  "fuente": "ARCA/AFIP - Vigencia hasta 31/01/2026",
+  "version": 2,
+  "actualizadoEl": "01/02/2026",
+  "fuente": "ARCA - Vigencia 01/02/2026 - 31/07/2026",
   "tarifas": [
     {
       "letra": "A",
-      "limiteAnual": 8992597.87,
-      "cuotaServicios": 37085.74,
-      "cuotaVentaMuebles": 37085.74
+      "limiteAnual": 10277988.13,
+      "cuotaServicios": 42386.74,
+      "cuotaVentaMuebles": 42386.74
     },
     {
       "letra": "B",
-      "limiteAnual": 13175201.52,
-      "cuotaServicios": 42216.41,
-      "cuotaVentaMuebles": 42216.41
+      "limiteAnual": 15058447.71,
+      "cuotaServicios": 48250.78,
+      "cuotaVentaMuebles": 48250.78
     },
     {
       "letra": "C",
-      "limiteAnual": 18473166.15,
-      "cuotaServicios": 49435.58,
-      "cuotaVentaMuebles": 48320.22
+      "limiteAnual": 21113696.52,
+      "cuotaServicios": 56501.85,
+      "cuotaVentaMuebles": 55227.06
     },
     {
       "letra": "D",
-      "limiteAnual": 22934610.05,
-      "cuotaServicios": 63357.80,
-      "cuotaVentaMuebles": 61824.18
+      "limiteAnual": 26212853.42,
+      "cuotaServicios": 72414.10,
+      "cuotaVentaMuebles": 70661.26
     },
     {
       "letra": "E",
-      "limiteAnual": 26977793.60,
-      "cuotaServicios": 89714.31,
-      "cuotaVentaMuebles": 81070.26
+      "limiteAnual": 30833964.37,
+      "cuotaServicios": 102537.97,
+      "cuotaVentaMuebles": 92658.35
     },
     {
       "letra": "F",
-      "limiteAnual": 33809379.57,
-      "cuotaServicios": 112906.59,
-      "cuotaVentaMuebles": 97291.54
+      "limiteAnual": 38642048.36,
+      "cuotaServicios": 129045.32,
+      "cuotaVentaMuebles": 111198.27
     },
     {
       "letra": "G",
-      "limiteAnual": 40431835.35,
-      "cuotaServicios": 172457.38,
-      "cuotaVentaMuebles": 118920.05
+      "limiteAnual": 46211109.37,
+      "cuotaServicios": 197108.23,
+      "cuotaVentaMuebles": 135918.34
     },
     {
       "letra": "H",
-      "limiteAnual": 61344853.64,
-      "cuotaServicios": 391400.62,
-      "cuotaVentaMuebles": 238038.48
+      "limiteAnual": 70113407.33,
+      "cuotaServicios": 447346.93,
+      "cuotaVentaMuebles": 272063.40
     },
     {
       "letra": "I",
-      "limiteAnual": 68664410.05,
-      "cuotaServicios": 721650.46,
-      "cuotaVentaMuebles": 355672.64
+      "limiteAnual": 78479211.62,
+      "cuotaServicios": 824802.26,
+      "cuotaVentaMuebles": 406512.05
     },
     {
       "letra": "J",
-      "limiteAnual": 78632948.76,
-      "cuotaServicios": 874069.29,
-      "cuotaVentaMuebles": 434895.92
+      "limiteAnual": 89872640.30,
+      "cuotaServicios": 999007.65,
+      "cuotaVentaMuebles": 497059.41
     },
     {
       "letra": "K",
-      "limiteAnual": 94805682.90,
-      "cuotaServicios": 1208890.60,
-      "cuotaVentaMuebles": 525732.01
+      "limiteAnual": 108357084.05,
+      "cuotaServicios": 1381687.90,
+      "cuotaVentaMuebles": 600879.51
     }
   ],
   "donaciones": {
     "mensaje": "Esta app es 100% gratuita y la mantengo en mi tiempo libre. Si te resulta útil, podés colaborar para seguir mejorándola 💛",
-    "aliasMercadoPago": "limite.monotributo.mp",
-    "cbu": "0000003100000000000000",
-    "cafecitoUrl": "https://cafecito.app/limitemonotributo"
+    "aliasMercadoPago": "acatar.borne.isla.mp",
+    "cbu": "0000003100038131145602"
+ 
   }
 }
-

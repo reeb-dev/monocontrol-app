@@ -14,27 +14,27 @@ if (file("google-services.json").exists()) {
 }
 
 android {
-    namespace = "com.manuelreeb.monocontrol"
+    namespace = "com.reeb.controlmonotributoar"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.manuelreeb.monocontrol"
+        applicationId = "com.reeb.controlmonotributoar"
         minSdk = 26
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.0.1"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
         create("release") {
-            storeFile = file("keystore.jks")
-            storePassword = System.getenv("STORE_PASSWORD") ?: "default_password"
+            storeFile = file("keystore_nuevo_release.jks")
+            storePassword = System.getenv("STORE_PASSWORD") ?: "MonoControl2026!@#"
             keyAlias = System.getenv("KEY_ALIAS") ?: "key0"
-            keyPassword = System.getenv("KEY_PASSWORD") ?: "default_password"
+            keyPassword = System.getenv("KEY_PASSWORD") ?: "MonoControl2026!@#"
         }
     }
 

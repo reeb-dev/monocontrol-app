@@ -142,7 +142,7 @@ Controla tu facturación en tiempo real, sé alertado antes de cambiar de catego
 ## 💡 ¿Por qué MonoControl?
 
 **Simplicidad**: Interfaz intuitiva, sin complicaciones  
-**Precisión**: Cálculos fiscales exactos según AFIP  
+**Precisión**: Cálculos fiscales exactos según ARCA  
 **Velocidad**: Registro de movimientos en segundos  
 **Confianza**: Datos encriptados y seguros  
 **Productividad**: Ahorra horas en gestión fiscal  
@@ -161,7 +161,7 @@ Controla tu facturación en tiempo real, sé alertado antes de cambiar de catego
 ## 🆘 Soporte
 
 ¿Problemas o sugerencias?  
-📧 manuelreeb@gmail.com
+📧 jesusseep@gmail.com
 
 ---
 
@@ -178,9 +178,3 @@ Versión: **1.0**
 Descargá MonoControl ahora y toma el control de tu monotributo. 🚀
 
 ---
-
-## 📝 Para la descripción en Play Store:
-
-Copia este texto completo (hasta ~4000 caracteres) o adapta la versión corta según necesites.
-
-**Nota**: La descripción debe estar en español para Argentina. Puedes agregar más idiomas después.
